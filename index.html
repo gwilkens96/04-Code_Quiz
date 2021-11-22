@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Unit 4 Coding Quiz</title>
+
+    <link rel="stylesheet" href='/assets/style.css' />
+  </head>
+
+  <body>
+      <div>
+          <a href="scoreboard.html">
+              View Your Scores!
+          </a>
+      </div>
+      <div>
+          Time: <span id='timer'>0</span>
+      </div>
+      <div>
+          <h1>
+              Coding Quiz of Fun!
+          </h1>
+          <h2>
+              Do YOU know how to code?
+          </h2>
+          <p>
+              Answer the following coding questions within the 
+              very generous time limit. Incorrect answers will subtract
+              from your time by ten (10) seconds. Good luck coder!
+          </p>
+          <button>
+              Start Quiz!
+          </button>
+      </div>
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
+        <div id="choices" class="choices"></div>
+      </div>
+      <div id="score-screen" class="hide">
+        <h2>Finished!</h2>
+        <p>Your final score is <span id="final-score"></span>.
+        Wow great job!
+        </p>
+        <p>
+          Enter your initials: <input type="text" id="initials"/>
+          <button id="submit">Submit</button>
+        </p>
+      </div>
+
+      <div id="feedback" class="feedback hide"></div>
+    </div>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/logic.js"></script>
+  </body>
+</html>
+  </body>
