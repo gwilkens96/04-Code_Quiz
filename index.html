@@ -10,15 +10,19 @@
   </head>
 
   <body>
-      <div>
+      <div class='scoreboard'>
           <a href="scoreboard.html">
               View Your Scores!
           </a>
       </div>
       <div>
-          Time: <span id='timer'>0</span>
+
       </div>
-      <div>
+      <div id='body'>
+          <div class='timeScore'>
+          Time: <span id='timer'>0</span>
+        </div>
+      <div id='start' class='start'>
           <h1>
               Coding Quiz of Fun!
           </h1>
@@ -28,19 +32,19 @@
           <p>
               Answer the following coding questions within the 
               very generous time limit. Incorrect answers will subtract
-              from your time by ten (10) seconds. Good luck coder!
+              from your overall time. Good luck coder!
           </p>
-          <button>
+          <button id='start'>
               Start Quiz!
           </button>
       </div>
       <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
+        <h2 id="titleQ"></h2>
         <div id="choices" class="choices"></div>
       </div>
-      <div id="score-screen" class="hide">
+      <div id="endQuiz" class="hide">
         <h2>Finished!</h2>
-        <p>Your final score is <span id="final-score"></span>.
+        <p>Your final score is <span id="finalScore"></span>.
         Wow great job!
         </p>
         <p>
@@ -53,7 +57,7 @@
     </div>
 
     <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
   </body>
